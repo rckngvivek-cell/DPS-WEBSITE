@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leadership messages and guidance from Delhi Public School K. Asthan.">
+    <meta name="theme-color" content="#0f2f26">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/icon-192.png">
+<title>DPS K. Asthan | Leadership</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/leadership.css">
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body data-hall-index="3" data-hall-name="Leadership">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="top-nav">
+    <div class="institutional-ribbon">
+      <img class="institutional-banner-media" src="school-banner.png" alt="Delhi Public School K. Asthan campus banner" loading="eager">
+      <div class="institutional-ribbon-overlay">
+        <img class="institutional-logo" src="assets/brand/logo-mark.png" alt="Delhi Public School emblem">
+        <div class="institutional-copy">
+          <p class="institutional-name">DELHI PUBLIC SCHOOL K. ASTHAN</p>
+          <p class="institutional-address">Khalaseen, Kusheshwar Asthan - 848213</p>
+        </div>
+      </div>
+    </div>
+    <a class="brand brand--icon" href="index.html" aria-label="Delhi Public School K. Asthan">
+      <img class="brand-logo" src="assets/brand/logo-mark.png" alt="" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="leadership.html">Leadership</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a href="declaration.html">Declaration</a>
+    </nav>
+    <a class="secure-login" href="https://example.com/login" target="_blank" rel="noopener">Secure Login</a>
+  </header>
+
+  <main id="mainContent">
+    <section class="council-intro">
+      <p>Leadership</p>
+      <h1>Leadership Messages</h1>
+      <p>Select a leadership voice to view guidance for students, families, and staff. One message is highlighted at any given moment. Use arrow keys to move between messages.</p>
+      <div class="council-actions">
+        <button id="prevMessage" type="button">Previous</button>
+        <button id="nextMessage" type="button">Next</button>
+      </div>
+    </section>
+
+    <section class="council-shell" id="councilShell">
+      <div class="focus-orb" id="focusOrb" aria-hidden="true"></div>
+      <canvas class="council-radar" id="councilRadar" aria-hidden="true"></canvas>
+      <div class="chamber-grid">
+        <article class="focus-panel focus-panel--chamber" id="focusPanel" aria-live="polite"></article>
+
+        <section class="council-ring" id="councilRing" role="tablist" aria-label="Leadership messages">
+          <button class="podium active" role="tab" aria-selected="true" data-index="0" data-role="Director" data-points="Discipline and values|Student safety and respect|Support for teachers and learners">
+            <img class="podium-photo" src="assets/gallery/photos/photo_026.jpeg" alt="" aria-hidden="true" loading="lazy">
+            <div class="podium-copy">
+              <p class="podium-role">Director</p>
+              <h2>Director's Message</h2>
+              <p class="podium-message">Education shapes individuals and nations. We are committed to structured guidance, academic strength, and principled leadership development.</p>
+            </div>
+          </button>
+          <button class="podium" role="tab" aria-selected="false" data-index="1" data-role="Principal" data-points="Academic planning|Transparent evaluation|Attendance and punctuality">
+            <img class="podium-photo" src="assets/gallery/photos/photo_025.jpeg" alt="" aria-hidden="true" loading="lazy">
+            <div class="podium-copy">
+              <p class="podium-role">Principal</p>
+              <h2>Principal's Message</h2>
+              <p class="podium-message">We focus on conceptual clarity, disciplined learning, and transparent evaluation systems.</p>
+            </div>
+          </button>
+          <button class="podium" role="tab" aria-selected="false" data-index="2" data-role="Academic Incharge" data-points="Curriculum implementation|Teacher coordination|Regular assessment support">
+            <img class="podium-photo" src="assets/gallery/photos/photo_094.jpeg" alt="" aria-hidden="true" loading="lazy">
+            <div class="podium-copy">
+              <p class="podium-role">Academic Incharge</p>
+              <h2>Academic Incharge's Message</h2>
+              <p class="podium-message">Our academic structure ensures systematic curriculum implementation and measurable progress.</p>
+            </div>
+          </button>
+          <button class="podium" role="tab" aria-selected="false" data-index="3" data-role="Examination Controller" data-points="Fair exam conduct|Result integrity|Record and documentation">
+            <img class="podium-photo" src="assets/gallery/photos/photo_097.jpeg" alt="" aria-hidden="true" loading="lazy">
+            <div class="podium-copy">
+              <p class="podium-role">Examination Controller</p>
+              <h2>Examination Controller's Message</h2>
+              <p class="podium-message">Our evaluation framework is fair, transparent, and aligned with academic objectives.</p>
+            </div>
+          </button>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-leadership">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="assets/brand/logo-mark.png" alt="DPS logo">
+          <div>
+            <p class="footer-title">Delhi Public School K. Asthan</p>
+            <p class="footer-sub">Leadership Messages and Guidance</p>
+          </div>
+        </div>
+        <p class="footer-statement">Leadership guidance supports discipline, learning, and student growth. Messages are presented with clarity, accountability, and institutional responsibility.</p>
+      </div>
+
+      <div class="footer-col footer-col--links">
+        <p class="footer-heading">Quick Links</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="academics.html">Academics</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+          <a href="declaration.html">Declaration</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <p class="footer-heading">Contact</p>
+        <p class="footer-contact-line"><strong>Address:</strong> Khalaseen, Kusheshwar Asthan - 848213</p>
+        <p class="footer-contact-line"><strong>Phone:</strong> To be updated</p>
+        <p class="footer-contact-line"><strong>Email:</strong> To be updated</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-hall">Leadership</p>
+      <p class="footer-note">Guidance that supports discipline, learning, and student growth.</p>
+    </div>
+  </footer>
+
+<script src="js/leadership.js"></script>
+  <script src="js/shared.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,310 @@
+﻿:root {
+  --dps-green-primary: #0f2f26;
+  --dps-green-deep: #0a221c;
+  --dps-green-surface: #163d33;
+  --dps-gold-accent: #c6a75e;
+  --dps-gold-soft: #d4b87a;
+  --dps-gold-muted: #9f8447;
+  --dps-ivory: #f2f1ed;
+  --dps-ivory-soft: #e7e4dc;
+  --dps-shadow-deep: rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--dps-ivory);
+  font-family: "Heebo", sans-serif;
+  background:
+    linear-gradient(180deg, rgba(198, 167, 94, 0.09), transparent 15%),
+    linear-gradient(180deg, #163d33 0%, #0f2f26 56%, #0a221c 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(212, 184, 122, 0.22), transparent 42%),
+    radial-gradient(circle at 88% 18%, rgba(154, 227, 200, 0.14), transparent 40%),
+    linear-gradient(rgba(212, 184, 122, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 184, 122, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 70px 70px, 70px 70px;
+  mix-blend-mode: screen;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.8rem;
+  top: -3rem;
+  background: var(--dps-gold-accent);
+  color: #10211c;
+  padding: 0.45rem 0.7rem;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0.8rem;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.76rem 1.2rem;
+  background: rgba(10, 34, 28, 0.84);
+  border-bottom: 1px solid rgba(198, 167, 94, 0.34);
+}
+
+.brand {
+  color: var(--dps-ivory-soft);
+  text-decoration: none;
+  font-family: "Gilda Display", serif;
+  letter-spacing: 0.06em;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid rgba(198, 167, 94, 0.38);
+  background: transparent;
+  color: var(--dps-ivory);
+  padding: 0.35rem 0.55rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.72rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a,
+.secure-login {
+  color: var(--dps-ivory);
+  text-decoration: none;
+  font-size: 0.84rem;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover,
+nav a.active,
+.secure-login:hover {
+  color: var(--dps-gold-soft);
+  border-color: var(--dps-gold-muted);
+}
+
+main {
+  width: min(1100px, 95vw);
+  margin: 1.7rem auto 2.6rem;
+}
+
+.office-intro p {
+  margin: 0;
+  color: var(--dps-gold-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.74rem;
+}
+
+.office-intro h1 {
+  margin: 0.48rem 0 0;
+  font-family: "Gilda Display", serif;
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+}
+
+.office-layout {
+  margin-top: 0.95rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.contact-card,
+.hours-card,
+.inquiry-card {
+  border: 1px solid rgba(198, 167, 94, 0.3);
+  background: rgba(10, 34, 28, 0.74);
+  padding: 1rem;
+  box-shadow: 0 14px 24px var(--dps-shadow-deep);
+}
+
+.contact-card {
+  --mx: 50%;
+  --my: 50%;
+  transform-style: preserve-3d;
+  transition: transform 180ms ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(212, 184, 122, 0.22), transparent 56%);
+  transition: opacity 240ms ease;
+  pointer-events: none;
+}
+
+.contact-card:hover::before,
+.contact-card:focus-within::before {
+  opacity: 1;
+}
+
+.contact-card h2,
+.hours-card h2,
+.inquiry-card h2 {
+  margin: 0 0 0.55rem;
+  color: var(--dps-gold-soft);
+  font-family: "Gilda Display", serif;
+}
+
+.contact-card p,
+.hours-card p,
+.hours-card li,
+.inquiry-card p {
+  margin: 0.34rem 0;
+  line-height: 1.65;
+  color: var(--dps-ivory-soft);
+}
+
+.copy-actions {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.copy-actions button,
+.inquiry-card button {
+  border: 1px solid rgba(198, 167, 94, 0.35);
+  background: rgba(22, 61, 51, 0.62);
+  color: var(--dps-ivory);
+  padding: 0.42rem 0.6rem;
+  cursor: pointer;
+}
+
+.copy-actions button:hover,
+.inquiry-card button:hover,
+.hours-card a:hover {
+  color: var(--dps-gold-soft);
+  background: rgba(198, 167, 94, 0.16);
+}
+
+#copyStatus,
+#inquiryStatus {
+  min-height: 1.1rem;
+  color: var(--dps-gold-soft);
+  font-size: 0.88rem;
+}
+
+#copyStatus.is-ok {
+  color: rgba(154, 227, 200, 0.95);
+  animation: statusPulse 520ms ease both;
+}
+
+#copyStatus.is-bad {
+  color: rgba(255, 213, 140, 0.95);
+  animation: statusPulse 520ms ease both;
+}
+
+@keyframes statusPulse {
+  from {
+    opacity: 0.2;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hours-card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.hours-card a {
+  margin-top: 0.6rem;
+  display: inline-block;
+  border: 1px solid rgba(198, 167, 94, 0.35);
+  color: var(--dps-ivory);
+  text-decoration: none;
+  padding: 0.42rem 0.6rem;
+}
+
+.inquiry-card {
+  grid-column: 1 / -1;
+}
+
+.inquiry-card form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.inquiry-card label {
+  display: grid;
+  gap: 0.25rem;
+  color: var(--dps-ivory-soft);
+}
+
+.inquiry-card input,
+.inquiry-card textarea {
+  width: 100%;
+  border: 1px solid rgba(198, 167, 94, 0.34);
+  background: rgba(15, 47, 38, 0.88);
+  color: var(--dps-ivory);
+  padding: 0.45rem 0.5rem;
+}
+
+.inquiry-card textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.reduced-motion * {
+  transition: none !important;
+  animation: none !important;
+}
+
+@media (max-width: 1080px) {
+  .top-nav {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+    justify-self: end;
+  }
+
+  nav {
+    grid-column: 1 / -1;
+    display: none;
+    justify-content: flex-start;
+  }
+
+  nav.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 840px) {
+  .office-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .inquiry-card {
+    grid-column: 1;
+  }
+}

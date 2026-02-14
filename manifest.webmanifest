@@ -1,0 +1,25 @@
+﻿{
+  "name": "Delhi Public School K. Asthan",
+  "short_name": "DPS K. Asthan",
+  "description": "Official website of Delhi Public School K. Asthan, Khalaseen, Kusheshwar Asthan - 848213.",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a221c",
+  "theme_color": "#0f2f26",
+  "icons": [
+    {
+      "src": "assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

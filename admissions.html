@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admissions intake assistant for Delhi Public School K. Asthan with a guided 10-step flow.">
+  <meta name="theme-color" content="#0f2f26">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/icon-192.png">
+  <title>DPS K. Asthan | Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admissions.css">
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body data-hall-index="6" data-hall-name="Admissions">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="top-nav">
+    <div class="institutional-ribbon">
+      <img class="institutional-banner-media" src="school-banner.png" alt="Delhi Public School K. Asthan campus banner" loading="eager">
+      <div class="institutional-ribbon-overlay">
+        <img class="institutional-logo" src="assets/brand/logo-mark.png" alt="Delhi Public School emblem">
+        <div class="institutional-copy">
+          <p class="institutional-name">DELHI PUBLIC SCHOOL K. ASTHAN</p>
+          <p class="institutional-address">Khalaseen, Kusheshwar Asthan - 848213</p>
+        </div>
+      </div>
+    </div>
+    <a class="brand brand--icon" href="index.html" aria-label="Delhi Public School K. Asthan">
+      <img class="brand-logo" src="assets/brand/logo-mark.png" alt="" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a href="declaration.html">Declaration</a>
+    </nav>
+    <a class="secure-login" href="https://example.com/login" target="_blank" rel="noopener">Secure Login</a>
+  </header>
+
+  <main id="mainContent">
+    <section class="admission-hero" aria-label="Admissions introduction">
+      <p>Admissions</p>
+      <h1>Structured Entry Portal</h1>
+      <p>The entire admission process is conducted through a structured chatbot-operated system. The admission process automatically begins when visitors access the Admissions page.</p>
+      <p class="journey-title">Structured Admission Journey</p>
+      <ol id="journeyList">
+        <li>Class Selection</li>
+        <li>Student Personal Details</li>
+        <li>Parent/Guardian Information</li>
+        <li>Contact Details</li>
+        <li>Residential Address</li>
+        <li>Previous School Information (if applicable)</li>
+        <li>Document Confirmation</li>
+        <li>Final Review</li>
+        <li>Consent Confirmation</li>
+        <li>Submission Acknowledgment</li>
+      </ol>
+    </section>
+
+    <section class="operator-zone">
+      <article class="progress-core">
+        <svg class="ring" viewBox="0 0 140 140" aria-hidden="true">
+          <circle class="track" cx="70" cy="70" r="54"></circle>
+          <circle class="value" id="ringValue" cx="70" cy="70" r="54"></circle>
+        </svg>
+        <p>Step <span id="stepCount">1</span>/10</p>
+        <p class="state-label">State: <span id="botStateLabel">Idle</span></p>
+      </article>
+
+      <section class="chatbot" id="chatbot" data-state="Idle">
+        <header>
+          <span>Admission Intake Operator</span>
+          <div class="head-actions">
+            <button type="button" id="resumeSaved">Resume Saved Application</button>
+            <button type="button" id="restartFlow">Start New Application</button>
+          </div>
+        </header>
+        <div class="chat-log" id="chatLog"></div>
+        <form id="chatForm" novalidate>
+          <div id="chatFields"></div>
+          <p id="chatError" class="chat-error" aria-live="assertive"></p>
+          <div class="form-actions">
+            <button type="button" id="backStep">Back</button>
+            <button type="submit" id="chatAction">Continue</button>
+          </div>
+        </form>
+        <footer class="bot-footer">
+          <p>Data is saved locally in your browser for interruption recovery.</p>
+          <p id="saveStatus" class="save-status" aria-live="polite">Draft status: waiting for input.</p>
+          <button type="button" id="downloadReceipt">Download Submission Receipt</button>
+        </footer>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-admissions">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="assets/brand/logo-mark.png" alt="DPS logo">
+          <div>
+            <p class="footer-title">Delhi Public School K. Asthan</p>
+            <p class="footer-sub">Admissions Intake System</p>
+          </div>
+        </div>
+        <p class="footer-statement">The entire admission process is conducted through a structured chatbot-operated system. The process begins when visitors access the Admissions page and proceeds step-by-step through review, consent, and submission acknowledgment.</p>
+      </div>
+
+      <div class="footer-col footer-col--links">
+        <p class="footer-heading">Quick Links</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="academics.html">Academics</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+          <a href="declaration.html">Declaration</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <p class="footer-heading">Contact</p>
+        <p class="footer-contact-line"><strong>Address:</strong> Khalaseen, Kusheshwar Asthan - 848213</p>
+        <p class="footer-contact-line"><strong>Phone:</strong> To be updated</p>
+        <p class="footer-contact-line"><strong>Email:</strong> To be updated</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-hall">Admissions</p>
+      <p class="footer-note">Guided 10-step admissions flow with progress saved locally in your browser.</p>
+    </div>
+  </footer>
+
+<script src="js/admissions.js"></script>
+  <script src="js/shared.js"></script>
+</body>
+</html>
+
+
+
+

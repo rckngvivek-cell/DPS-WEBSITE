@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching team grouped by subject departments.">
+  <meta name="theme-color" content="#0f2f26">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/icon-192.png">
+  <title>DPS K. Asthan | Academics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/academics.css">
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body data-hall-index="4" data-hall-name="Academics">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="top-nav">
+    <div class="institutional-ribbon">
+      <img class="institutional-banner-media" src="school-banner.png" alt="Delhi Public School K. Asthan campus banner" loading="eager">
+      <div class="institutional-ribbon-overlay">
+        <img class="institutional-logo" src="assets/brand/logo-mark.png" alt="Delhi Public School emblem">
+        <div class="institutional-copy">
+          <p class="institutional-name">DELHI PUBLIC SCHOOL K. ASTHAN</p>
+          <p class="institutional-address">Khalaseen, Kusheshwar Asthan - 848213</p>
+        </div>
+      </div>
+    </div>
+    <a class="brand brand--icon" href="index.html" aria-label="Delhi Public School K. Asthan">
+      <img class="brand-logo" src="assets/brand/logo-mark.png" alt="" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a class="active" href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a href="declaration.html">Declaration</a>
+    </nav>
+    <a class="secure-login" href="https://example.com/login" target="_blank" rel="noopener">Secure Login</a>
+  </header>
+
+  <main id="mainContent">
+    <section class="academic-header">
+      <p>Academics</p>
+      <h1>Teaching Team by Subject Group</h1>
+      <p>Our faculty comprises qualified and dedicated educators committed to structured lesson delivery, continuous assessment, and student mentorship. Departments are organised by subject groups: Primary, English, Mathematics, Science, Social Science, Hindi, and Computer Education.</p>
+    </section>
+
+    <section class="academic-tools">
+      <label>
+        Search within visible department
+        <input type="search" id="facultySearch" placeholder="Type teacher name, designation, qualification">
+      </label>
+      <button id="exportPanel" type="button">Export Department Snapshot</button>
+      <p id="facultyCount" aria-live="polite">Visible faculty cards: 1</p>
+    </section>
+
+    <section class="academic-layout">
+      <aside class="dept-nav" id="deptNav" role="tablist" aria-label="Departments">
+        <button class="dept-btn active" role="tab" aria-selected="true" data-department="primary">Primary</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="english">English</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="mathematics">Mathematics</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="science">Science</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="social-science">Social Science</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="hindi">Hindi</button>
+        <button class="dept-btn" role="tab" aria-selected="false" data-department="computer-education">Computer Education</button>
+      </aside>
+
+      <div class="dept-content" id="deptContent">
+        <article class="dept-panel active" id="primary" data-title="Primary">
+          <h2>Primary</h2>
+          <p class="dept-intro">Foundational literacy, numeracy, and disciplined learning routines for early grades. Teachers support confidence-building through structured practice and regular feedback.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_014.jpeg" alt="Primary teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Primary Educator</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="english" data-title="English">
+          <h2>English</h2>
+          <p class="dept-intro">Reading, writing, grammar, and communication skills with structured practice. Focus is placed on clarity of expression and confident participation.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_015.jpeg" alt="English teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> English Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="mathematics" data-title="Mathematics">
+          <h2>Mathematics</h2>
+          <p class="dept-intro">Conceptual clarity, practice, and problem-solving supported by regular assessment. Learners are guided to build strong fundamentals and accuracy.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_016.jpeg" alt="Mathematics teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Mathematics Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="science" data-title="Science">
+          <h2>Science</h2>
+          <p class="dept-intro">Curriculum-aligned concepts supported through observation, explanation, and practical understanding. Students learn to ask questions, test ideas, and record findings responsibly.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_017.jpeg" alt="Science teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Science Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="social-science" data-title="Social Science">
+          <h2>Social Science</h2>
+          <p class="dept-intro">History, geography, civics, and social understanding delivered with structured learning and responsible thinking. Students are encouraged to connect concepts with real-life examples.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_018.jpeg" alt="Social science teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Social Science Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="hindi" data-title="Hindi">
+          <h2>Hindi</h2>
+          <p class="dept-intro">Language fluency, comprehension, and writing practice delivered through consistent routines. Students build vocabulary, reading confidence, and accurate expression.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_020.jpeg" alt="Hindi teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Hindi Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+        <article class="dept-panel" id="computer-education" data-title="Computer Education">
+          <h2>Computer Education</h2>
+          <p class="dept-intro">Digital readiness through structured skill-building, foundational tools, and responsible technology use. Learners develop confidence with guided practice and clear tasks.</p>
+          <div class="teacher-grid">
+            <article class="teacher-card">
+              <img src="assets/gallery/photos/photo_022.jpeg" alt="Computer teacher" loading="lazy">
+              <p><strong>Name:</strong> To be updated</p>
+              <p><strong>Designation:</strong> Computer Faculty</p>
+              <p><strong>Qualification:</strong> To be updated</p>
+              <p><strong>Experience:</strong> To be updated</p>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-academics">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="assets/brand/logo-mark.png" alt="DPS logo">
+          <div>
+            <p class="footer-title">Delhi Public School K. Asthan</p>
+            <p class="footer-sub">Teaching Team and Subject Groups</p>
+          </div>
+        </div>
+        <p class="footer-statement">Our faculty comprises qualified and dedicated educators committed to structured lesson delivery, continuous assessment, and student mentorship. Departments are organised by subject groups for clear academic coordination.</p>
+      </div>
+
+      <div class="footer-col footer-col--links">
+        <p class="footer-heading">Quick Links</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="academics.html">Academics</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+          <a href="declaration.html">Declaration</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <p class="footer-heading">Contact</p>
+        <p class="footer-contact-line"><strong>Address:</strong> Khalaseen, Kusheshwar Asthan - 848213</p>
+        <p class="footer-contact-line"><strong>Phone:</strong> To be updated</p>
+        <p class="footer-contact-line"><strong>Email:</strong> To be updated</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-hall">Academics</p>
+      <p class="footer-note">Departmental strength through structured mentorship.</p>
+    </div>
+  </footer>
+
+<script src="js/academics.js"></script>
+  <script src="js/shared.js"></script>
+</body>
+</html>
+
+
+
+

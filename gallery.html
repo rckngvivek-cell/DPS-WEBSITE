@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Delhi Public School K. Asthan: campus life, events, and achievements.">
+  <meta name="theme-color" content="#0f2f26">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/icon-192.png">
+  <title>DPS K. Asthan | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body data-hall-index="5" data-hall-name="Gallery">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="top-nav">
+    <div class="institutional-ribbon">
+      <img class="institutional-banner-media" src="school-banner.png" alt="Delhi Public School K. Asthan campus banner" loading="eager">
+      <div class="institutional-ribbon-overlay">
+        <img class="institutional-logo" src="assets/brand/logo-mark.png" alt="Delhi Public School emblem">
+        <div class="institutional-copy">
+          <p class="institutional-name">DELHI PUBLIC SCHOOL K. ASTHAN</p>
+          <p class="institutional-address">Khalaseen, Kusheshwar Asthan - 848213</p>
+        </div>
+      </div>
+    </div>
+    <a class="brand brand--icon" href="index.html" aria-label="Delhi Public School K. Asthan">
+      <img class="brand-logo" src="assets/brand/logo-mark.png" alt="" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="academics.html">Academics</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a href="declaration.html">Declaration</a>
+    </nav>
+    <a class="secure-login" href="https://example.com/login" target="_blank" rel="noopener">Secure Login</a>
+  </header>
+
+  <main id="mainContent">
+    <section class="gallery-hero">
+      <p>Gallery</p>
+      <h1>Curated Photo Gallery</h1>
+      <p>The Gallery reflects academic culture, student achievements, and campus excellence. Categories include academic activities, cultural programs, sports, celebrations, and infrastructure.</p>
+
+      <div class="smart-controls">
+        <label class="control-wide">
+          Search
+          <input id="searchFilter" type="search" placeholder="Search date, category, or source">
+        </label>
+        <label>
+          Sort
+          <select id="sortFilter">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="random">Random</option>
+          </select>
+        </label>
+        <button id="resetFilters" type="button">Reset</button>
+      </div>
+
+      <p id="visibleCount" aria-live="polite">Visible items: 0</p>
+    </section>
+
+    <section class="gallery-wall" id="galleryWall" aria-live="polite"></section>
+
+    <dialog id="lightbox" aria-label="Gallery Preview">
+      <div class="lightbox-controls">
+        <button class="close-lightbox" id="closeLightbox" aria-label="Close preview">Close</button>
+        <button id="prevItem" type="button" aria-label="Previous item">Previous</button>
+        <button id="nextItem" type="button" aria-label="Next item">Next</button>
+      </div>
+      <img id="lightboxImage" alt="Gallery preview">
+      <p id="lightboxCaption"></p>
+      <p id="lightboxMeta"></p>
+    </dialog>
+  </main>
+
+  <footer class="site-footer footer-gallery">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="assets/brand/logo-mark.png" alt="DPS logo">
+          <div>
+            <p class="footer-title">Delhi Public School K. Asthan</p>
+            <p class="footer-sub">Curated Photo Archive</p>
+          </div>
+        </div>
+        <p class="footer-statement">The gallery reflects academic culture, student achievements, and campus excellence. Photos are curated across academic activities, cultural programs, sports, celebrations, and infrastructure.</p>
+      </div>
+
+      <div class="footer-col footer-col--links">
+        <p class="footer-heading">Quick Links</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="academics.html">Academics</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+          <a href="declaration.html">Declaration</a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <p class="footer-heading">Contact</p>
+        <p class="footer-contact-line"><strong>Address:</strong> Khalaseen, Kusheshwar Asthan - 848213</p>
+        <p class="footer-contact-line"><strong>Phone:</strong> To be updated</p>
+        <p class="footer-contact-line"><strong>Email:</strong> To be updated</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-hall">Gallery</p>
+      <p class="footer-note">Campus moments preserved with clarity and care.</p>
+    </div>
+  </footer>
+
+<script src="js/gallery.js"></script>
+  <script src="js/shared.js"></script>
+</body>
+</html>
+
+
+

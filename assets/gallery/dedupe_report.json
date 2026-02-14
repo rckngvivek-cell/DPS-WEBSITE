@@ -1,0 +1,44 @@
+{
+  "processed_count": 135,
+  "kept_count": 131,
+  "deleted_count": 4,
+  "duplicate_group_count": 4,
+  "duplicate_groups": [
+    {
+      "representative": "WhatsApp Image 2025-12-10 at 1.41.46 PM.jpeg",
+      "kept_as": "assets/gallery/photos/photo_001.jpeg",
+      "cluster_size": 2,
+      "members": [
+        "WhatsApp Image 2025-12-10 at 1.41.46 PM.jpeg",
+        "WhatsApp Image 2026-02-14 at 8.36.45 AM (1).jpeg"
+      ]
+    },
+    {
+      "representative": "WhatsApp Image 2026-01-25 at 8.20.34 PM.jpeg",
+      "kept_as": "assets/gallery/photos/photo_002.jpeg",
+      "cluster_size": 2,
+      "members": [
+        "WhatsApp Image 2026-01-25 at 8.20.34 PM.jpeg",
+        "WhatsApp Image 2026-01-25 at 8.27.07 PM.jpeg"
+      ]
+    },
+    {
+      "representative": "WhatsApp Image 2026-01-26 at 1.27.38 PM.jpeg",
+      "kept_as": "assets/gallery/photos/photo_003.jpeg",
+      "cluster_size": 2,
+      "members": [
+        "WhatsApp Image 2026-01-26 at 1.27.38 PM.jpeg",
+        "WhatsApp Image 2026-02-14 at 8.31.42 AM.jpeg"
+      ]
+    },
+    {
+      "representative": "WhatsApp Image 2026-02-14 at 8.45.53 AM (2).jpeg",
+      "kept_as": "assets/gallery/photos/photo_004.jpeg",
+      "cluster_size": 2,
+      "members": [
+        "WhatsApp Image 2026-02-14 at 8.45.52 AM (1).jpeg",
+        "WhatsApp Image 2026-02-14 at 8.45.53 AM (2).jpeg"
+      ]
+    }
+  ]
+}
